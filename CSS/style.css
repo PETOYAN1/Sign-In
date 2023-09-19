@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: roboto;
+    color: white;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: url('sky.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    text-align: center;
+    height: 20em;
+    width: 20em;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input {
+    outline: none;
+    height: 2em;
+    width: 65%;
+    border: none;
+    padding: 1em;
+    margin-top: 3px;
+}
+.submit {
+    height: 3em;
+    width: 5em;
+    border: none;
+    background: #023467;
+    color: white;
+    font-family: roboto;
+    cursor: pointer;
+    margin-top: 1em;
+    font-size: 14px;
+}
+.checkbox {
+    cursor: default;
+    height: 1.2em;
+    width: 17px;
+}
+.check {
+    width: 51%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    animation: Cloud 30s infinite linear;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+}
+
+@keyframes Cloud {
+    0% {
+        object-position: 0px;
+        left: 0;
+        top: 0;
+    }
+    50% {
+        object-position: -1440px;
+    }
+    100% {
+        object-position: 0px;
+        left: 0;
+        top: 0;
+    }
+}
+.errPass {
+    position: absolute;
+    color: red;
+    margin-top: 3em;
+}
+.errLog {
+    position: absolute;
+    color: red;
+    margin-top: -5em;
+}

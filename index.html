@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Sign In</h1><br>
+        <form>
+            <label for="text">Login</label>
+                <input id="text" type="text"><br>
+            <label for="password">Password</label>
+                <input id="password" type="password"><br>
+                <label class="check" for="checkbox">Show Password
+                    <input id="checkbox" class="checkbox" type="checkbox" value="showPassword">
+                </label>
+                <input id="submit" class="submit" type="submit" value="Send">
+        </form>
+    </div>
+    <img src="CSS/cloud.png">
+    <span class="errLog" id="Log"></span>
+    <span class="errPass" id="err"></span>
+    <script src="script.js"></script>
+</body>
+</html>
